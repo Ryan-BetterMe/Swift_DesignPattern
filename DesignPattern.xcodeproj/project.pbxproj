@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0E100022B260A5F005B45AA /* WeatherStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E1FFE22B25A90B005B45AA /* WeatherStation.swift */; };
+		F0E1FFE32B25A90B005B45AA /* WeatherStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E1FFE22B25A90B005B45AA /* WeatherStation.swift */; };
+		F0E1FFFC2B260A01005B45AA /* DesignPatternXCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E1FFFB2B260A01005B45AA /* DesignPatternXCTest.swift */; };
 		F0EA378A2AFD38EF007242C0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA37892AFD38EF007242C0 /* main.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0E100002B260A3A005B45AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0EA377E2AFD38EF007242C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0EA37852AFD38EF007242C0;
+			remoteInfo = DesignPattern;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F0EA37842AFD38EF007242C0 /* CopyFiles */ = {
@@ -23,11 +36,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F0E1FFE12B25A467005B45AA /* Observer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Observer.md; sourceTree = "<group>"; };
+		F0E1FFE22B25A90B005B45AA /* WeatherStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStation.swift; sourceTree = "<group>"; };
+		F0E1FFF92B260A01005B45AA /* DesignPatternXCTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternXCTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E1FFFB2B260A01005B45AA /* DesignPatternXCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternXCTest.swift; sourceTree = "<group>"; };
 		F0EA37862AFD38EF007242C0 /* DesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EA37892AFD38EF007242C0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F0E1FFF62B260A01005B45AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0EA37832AFD38EF007242C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +62,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0E1FFE02B25A43D005B45AA /* 1_Observer */ = {
+			isa = PBXGroup;
+			children = (
+				F0E1FFE12B25A467005B45AA /* Observer.md */,
+				F0E1FFE22B25A90B005B45AA /* WeatherStation.swift */,
+			);
+			path = 1_Observer;
+			sourceTree = "<group>";
+		};
+		F0E1FFFA2B260A01005B45AA /* DesignPatternXCTest */ = {
+			isa = PBXGroup;
+			children = (
+				F0E1FFFB2B260A01005B45AA /* DesignPatternXCTest.swift */,
+			);
+			path = DesignPatternXCTest;
+			sourceTree = "<group>";
+		};
 		F0EA377D2AFD38EF007242C0 = {
 			isa = PBXGroup;
 			children = (
 				F0EA37882AFD38EF007242C0 /* DesignPattern */,
+				F0E1FFFA2B260A01005B45AA /* DesignPatternXCTest */,
 				F0EA37872AFD38EF007242C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F0EA37862AFD38EF007242C0 /* DesignPattern */,
+				F0E1FFF92B260A01005B45AA /* DesignPatternXCTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F0EA37892AFD38EF007242C0 /* main.swift */,
+				F0E1FFE02B25A43D005B45AA /* 1_Observer */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -65,6 +109,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F0E1FFF82B260A01005B45AA /* DesignPatternXCTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0E1FFFD2B260A01005B45AA /* Build configuration list for PBXNativeTarget "DesignPatternXCTest" */;
+			buildPhases = (
+				F0E1FFF52B260A01005B45AA /* Sources */,
+				F0E1FFF62B260A01005B45AA /* Frameworks */,
+				F0E1FFF72B260A01005B45AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0E100012B260A3A005B45AA /* PBXTargetDependency */,
+			);
+			name = DesignPatternXCTest;
+			productName = DesignPatternXCTest;
+			productReference = F0E1FFF92B260A01005B45AA /* DesignPatternXCTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F0EA37852AFD38EF007242C0 /* DesignPattern */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0EA378D2AFD38EF007242C0 /* Build configuration list for PBXNativeTarget "DesignPattern" */;
@@ -92,6 +154,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					F0E1FFF82B260A01005B45AA = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					F0EA37852AFD38EF007242C0 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -111,22 +176,81 @@
 			projectRoot = "";
 			targets = (
 				F0EA37852AFD38EF007242C0 /* DesignPattern */,
+				F0E1FFF82B260A01005B45AA /* DesignPatternXCTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		F0E1FFF72B260A01005B45AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F0E1FFF52B260A01005B45AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E100022B260A5F005B45AA /* WeatherStation.swift in Sources */,
+				F0E1FFFC2B260A01005B45AA /* DesignPatternXCTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0EA37822AFD38EF007242C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F0EA378A2AFD38EF007242C0 /* main.swift in Sources */,
+				F0E1FFE32B25A90B005B45AA /* WeatherStation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F0E100012B260A3A005B45AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0EA37852AFD38EF007242C0 /* DesignPattern */;
+			targetProxy = F0E100002B260A3A005B45AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F0E1FFFE2B260A01005B45AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R56NU38U6N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryan.DesignPatternXCTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F0E1FFFF2B260A01005B45AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R56NU38U6N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryan.DesignPatternXCTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		F0EA378B2AFD38EF007242C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -270,6 +394,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F0E1FFFD2B260A01005B45AA /* Build configuration list for PBXNativeTarget "DesignPatternXCTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0E1FFFE2B260A01005B45AA /* Debug */,
+				F0E1FFFF2B260A01005B45AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F0EA37812AFD38EF007242C0 /* Build configuration list for PBXProject "DesignPattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
