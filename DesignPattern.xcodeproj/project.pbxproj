@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0221E982B277A99003245ED /* CartDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0221E972B277A99003245ED /* CartDemo.swift */; };
+		F0221E992B278594003245ED /* CartDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0221E972B277A99003245ED /* CartDemo.swift */; };
 		F0E100022B260A5F005B45AA /* WeatherStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E1FFE22B25A90B005B45AA /* WeatherStation.swift */; };
 		F0E1FFE32B25A90B005B45AA /* WeatherStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E1FFE22B25A90B005B45AA /* WeatherStation.swift */; };
 		F0E1FFFC2B260A01005B45AA /* DesignPatternXCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E1FFFB2B260A01005B45AA /* DesignPatternXCTest.swift */; };
@@ -36,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F0221E972B277A99003245ED /* CartDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDemo.swift; sourceTree = "<group>"; };
 		F0E1FFE12B25A467005B45AA /* Observer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Observer.md; sourceTree = "<group>"; };
 		F0E1FFE22B25A90B005B45AA /* WeatherStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStation.swift; sourceTree = "<group>"; };
 		F0E1FFF92B260A01005B45AA /* DesignPatternXCTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternXCTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +70,7 @@
 			children = (
 				F0E1FFE12B25A467005B45AA /* Observer.md */,
 				F0E1FFE22B25A90B005B45AA /* WeatherStation.swift */,
+				F0221E972B277A99003245ED /* CartDemo.swift */,
 			);
 			path = 1_Observer;
 			sourceTree = "<group>";
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0221E992B278594003245ED /* CartDemo.swift in Sources */,
 				F0E100022B260A5F005B45AA /* WeatherStation.swift in Sources */,
 				F0E1FFFC2B260A01005B45AA /* DesignPatternXCTest.swift in Sources */,
 			);
@@ -206,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0EA378A2AFD38EF007242C0 /* main.swift in Sources */,
+				F0221E982B277A99003245ED /* CartDemo.swift in Sources */,
 				F0E1FFE32B25A90B005B45AA /* WeatherStation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

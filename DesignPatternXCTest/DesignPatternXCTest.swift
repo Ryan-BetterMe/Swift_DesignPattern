@@ -16,14 +16,8 @@ final class DesignPatternXCTest: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-        
+    
+    func testWeatherStation() {
         let s = WeatherStation()
         let display1 = CurrentConditionDisplay()
         let display2 = StatisticDisplay()
@@ -39,6 +33,24 @@ final class DesignPatternXCTest: XCTestCase {
         
         NSLog("\n")
         s.receiveDataChanged(temp: 6, humidity: 5, pressure: 4)
+    }
+    
+    func testCartManager() {
+        let cartManager = CartManager()
+        
+        let navigationBar = NSToolbar()
+        let cartVC = NSViewController()
+        
+        cartManager.add(subscriber: navigationBar)
+        cartManager.add(subscriber: cartVC)
+        
+        let apple = Food(id: 1, name: "Apple", price: Decimal.init(2), calories: 1)
+        let tShirt = Clothes(id: 2, name: "T-Shirt", price: Decimal.init(6), size: "XL")
+        
+        cartManager.add(product: apple)
+        cartManager.add(product: tShirt)
+        
+        cartManager.remove(product: apple)
     }
 
     func testPerformanceExample() throws {
